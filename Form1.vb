@@ -42,7 +42,7 @@
         End If
     End Sub
 
-    Private Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
+    Public Sub btnSimpan_Click(sender As Object, e As EventArgs) Handles btnSimpan.Click
         Dim fileWriter As New IO.StreamWriter(txtFilePath.Text)
 
         For Each mahasiswa In mahasiswaList

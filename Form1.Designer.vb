@@ -36,6 +36,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.dgvMahasiswa, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -56,7 +57,7 @@ Partial Class Form1
         '
         'txtFilePath
         '
-        Me.txtFilePath.Location = New System.Drawing.Point(360, 116)
+        Me.txtFilePath.Location = New System.Drawing.Point(360, 90)
         Me.txtFilePath.Name = "txtFilePath"
         Me.txtFilePath.Size = New System.Drawing.Size(100, 20)
         Me.txtFilePath.TabIndex = 2
@@ -93,7 +94,7 @@ Partial Class Form1
         '
         'btnSimpan
         '
-        Me.btnSimpan.Location = New System.Drawing.Point(96, 113)
+        Me.btnSimpan.Location = New System.Drawing.Point(360, 116)
         Me.btnSimpan.Name = "btnSimpan"
         Me.btnSimpan.Size = New System.Drawing.Size(75, 23)
         Me.btnSimpan.TabIndex = 7
@@ -111,7 +112,7 @@ Partial Class Form1
         '
         'btnTampil
         '
-        Me.btnTampil.Location = New System.Drawing.Point(177, 113)
+        Me.btnTampil.Location = New System.Drawing.Point(105, 113)
         Me.btnTampil.Name = "btnTampil"
         Me.btnTampil.Size = New System.Drawing.Size(75, 23)
         Me.btnTampil.TabIndex = 9
@@ -154,11 +155,21 @@ Partial Class Form1
         Me.Label4.TabIndex = 13
         Me.Label4.Text = "CARI MAHASISWA"
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(239, 93)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(113, 13)
+        Me.Label5.TabIndex = 14
+        Me.Label5.Text = "BERIKAN NAMA FILE"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -174,7 +185,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtNIM)
         Me.Controls.Add(Me.dgvMahasiswa)
         Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Text = "Aplikasi CRUD Mahasiswa"
         CType(Me.dgvMahasiswa, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -195,4 +206,5 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class
